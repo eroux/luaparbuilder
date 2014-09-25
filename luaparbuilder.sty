@@ -1,0 +1,11 @@
+\bgroup\expandafter\expandafter\expandafter\egroup
+\expandafter\ifx\csname ProvidesPackage\endcsname\relax
+  \input luatexbase.sty
+\else
+  \NeedsTeXFormat{LaTeX2e}
+  \ProvidesPackage{luaparbuilder}
+    [2014/09/25 v0.1 parbuilder package for LuaTeX]
+  \RequirePackage{luatexbase}
+\fi
+\RequireLuaModule{luaparbuilder}
+\endinput
